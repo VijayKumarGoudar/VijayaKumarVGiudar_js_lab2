@@ -3,7 +3,10 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
+console.log("java script is working");
 const searchbox = document.querySelector('.search-box');
+console.log(searchbox);
+getResults('Bangalore');
 searchbox.addEventListener('keypress', setQuery);
 
 function setQuery(evt) {
